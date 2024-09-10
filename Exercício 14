@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    float agua;
+    float peso;
+    
+    System.out.println("Informe seu peso em quilos: ");
+    peso = entrada.nextFloat();
+    
+    agua = (peso * 35)/1000;
+    
+    System.out.println("É recomendado que você beba: " + agua + " litros de água por dia.");
+    
+  }
+}
