@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    double x1;
+    double y1;
+    double x2;
+    double y2;
+    double distancia;
+    
+    System.out.println("Insira o valor para o x do ponto 1: ");
+    x1 = entrada.nextFloat();
+    
+    System.out.println("Insira o valor para o y do ponto 1: ");
+    y1 = entrada.nextFloat();
+    
+    System.out.println("Insira o valor para o x do ponto 2: ");
+    x2 = entrada.nextFloat();
+    
+    System.out.println("Insira o valor para o y do ponto 2: ");
+    y2 = entrada.nextFloat();
+    
+    distancia = Math.sqrt(Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2));
+    System.out.println("A distância entre os dois pontos é de: " + distancia);
+    
+  }
+}
