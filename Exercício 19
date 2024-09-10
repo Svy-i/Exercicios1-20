@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    int valorOperacao;
+    String operacao;
+    System.out.println("Insire o número desejado para realizar a operação: \nAperte 1 para exibir o saldo.\nAperte 2 para exibir o extrato.\nAperte 3 para realizar um depósito.\nAperte 4 para realizar um saque.\nAperte 5 para sair.");
+    valorOperacao = entrada.nextInt();
+    switch(valorOperacao){
+      case 1:operacao= "Exibir Saldo";break;
+      case 2:operacao= "Exibir Extrato";break;
+      case 3:operacao= "Realizar Depósito";break;
+      case 4:operacao= "Realizar Saque";break;
+      case 5:operacao= "Sair";break;
+      default:operacao= "Erro";break;
+    }
+    System.out.println(operacao);
+  }
+}
