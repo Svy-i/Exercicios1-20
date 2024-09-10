@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    float etanol;
+    float gasolina;
+    float resultado;
+    
+    System.out.println("Insira o preço do etanol: ");
+    etanol = entrada.nextFloat();
+    
+    System.out.println("Insira o preço da gasolina: ");
+    gasolina = entrada.nextFloat();
+    
+    if (etanol < 0.7*gasolina) {
+      System.out.println("O etanol é a melhor opção. ");
+    }
+    if (etanol == 0.7*gasolina) {
+      System.out.println("As duas opções tem o mesmo valor em custo-benefício. ");
+    }
+    if (etanol > 0.7*gasolina){
+      System.out.println("A gasolina é a melhor opção.");
+    }  
+  }
+}
