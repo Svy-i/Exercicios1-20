@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    float comprimento;
+    float largura;
+    float area;
+    float preco;
+    double revestimento;
+    
+    System.out.println("Insira o comprimento da área a ser revestida: ");
+    comprimento = entrada.nextFloat();
+    
+    System.out.println("Insira a largura da área a ser revestida: ");
+    largura = entrada.nextFloat();
+    
+    area = comprimento*largura;
+    revestimento = Math.ceil (area + (area * 0.1));
+    preco = area * 15;
+    
+    System.out.println("A área a ser revestida é de: " + revestimento + "incluindo o acabamento.");
+    System.out.println("O preço total para revestir a área equivale a: " + preco + " reais");
+    
+  }
+}
