@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    float numero1;
+    float numero2;
+    float numero3;
+    float media;
+    
+    System.out.println("Insira suas notas: ");
+    numero1 = entrada.nextFloat();
+    numero2 = entrada.nextFloat();
+    numero3 = entrada.nextFloat();
+    media = (numero1 + numero2 + numero3)/3;
+    System.out.println("Essa é a sua média: " + media);
+    
+    
+  }
+}
