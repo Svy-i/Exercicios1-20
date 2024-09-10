@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    double pi = 3.1415;
+    double raio;
+    double area;
+    double resultado;
+    System.out.println("Esse programa é para calcular a área de um círculo: ");
+    System.out.println("Insira o raio do círculo: ");
+    raio = entrada.nextDouble();
+    resultado = pi*raio*raio;
+    System.out.println("A área do círculo é igual a: " + resultado);
+    
+    
+  }
+}
