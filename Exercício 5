@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    float valorHora;
+    float horasMes;
+    float descontoINSS;
+    float salarioLiquido;
+    float salarioBruto;
+    
+    System.out.println("Insira o valor recebido por hora: ");
+    valorHora = entrada.nextFloat();
+    System.out.println("Insira o total de horas trabalhadas no mês: ");
+    horasMes = entrada.nextFloat();
+    System.out.println("Insira o valor do desconto INSS: ");
+    descontoINSS = entrada.nextFloat();
+    salarioBruto = valorHora*horasMes;
+    salarioLiquido = salarioBruto - (salarioBruto*descontoINSS);
+    System.out.println("O seu salário líquido corresponde a: " + salarioLiquido + " reais");
+    
+    
+    
+    
+  }
+}
