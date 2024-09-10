@@ -1,0 +1,13 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    Double dolar;
+    Double reais;
+    System.out.println("Insira um valor em dolar: ");
+    dolar = entrada.nextDouble();
+    reais = dolar * 4.95;
+    System.out.println("Essa é a conversão para reais: "+ reais);
+    
+  }
+}
