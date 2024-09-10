@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    Float valorA;
+    Float valorB;
+    
+    System.out.println("Insira um valor para corresponder a A: ");
+    valorA = entrada.nextFloat();
+    System.out.println("Insira um valor para corresponder a B: ");
+    valorB = entrada.nextFloat();
+    valorA = valorA + valorB;
+    valorB = valorA - valorB;
+    valorA = valorA - valorB;
+    System.out.println("Após trocar os valores de A e B: ");
+    System.out.println("A é igual a: " + valorA);
+    System.out.println("B é igual a: " + valorB);
+    
+  }
+}
