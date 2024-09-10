@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
+    int votoBranco;
+    int votoNulo;
+    int votoValido;
+    int totalEleitores;
+    
+    System.out.println("Número de votos brancos: ");
+    votoBranco = entrada.nextInt();
+    
+    System.out.println("Número de votos nulos: ");
+    votoNulo = entrada.nextInt();
+    
+    System.out.println("Número de votos válidos: ");
+    votoValido = entrada.nextInt();
+    totalEleitores = votoValido + votoNulo + votoBranco;
+    
+     if (totalEleitores == 0) {
+            System.out.println("Não há eleitores para calcular percentuais.");
+        } else {
+            double percentualBranco = (votoBranco * 100.0) / totalEleitores;
+            double percentualNulo = (votoNulo * 100.0) / totalEleitores;
+            double percentualValido = (votoValido * 100.0) / totalEleitores;
+            
+            System.out.print("Percentual de votos brancos: " + percentualBranco + "\n");
+            System.out.print("Percentual de votos nulos: " + percentualNulo + "\n");
+            System.out.print("Percentual de votos válidos: " + percentualValido + "\n");
+     }
+  }
+}
